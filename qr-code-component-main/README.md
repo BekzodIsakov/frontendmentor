@@ -1,6 +1,6 @@
 # Frontend Mentor - QR code component
 
-![Live preview](https://frontendmentor-two-bay.vercel.app/)
+[Live example](https://frontendmentor-two-bay.vercel.app/)
 
 ![Design preview for the QR code component coding challenge](./preview.jpg)
 
