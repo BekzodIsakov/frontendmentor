@@ -1,0 +1,154 @@
+:root {
+  --yellow: hsl(47, 88%, 63%);
+  --gray: hsl(0, 0%, 42%);
+  --dark: hsl(0, 0%, 7%);
+  --white: hsl(0, 0%, 100%);
+
+  /* Font Sizes */
+  --font-size-l: 2.4rem;
+  --font-size-m: 1.6rem;
+  --font-size-sm: 1.4rem;
+
+  /* Spacing */
+  --spacing300: 2.4rem;
+  --spacing200: 1.6rem;
+  --spacing150: 1.2rem;
+  --spacing100: 0.8rem;
+  --spacing50: 0.4rem;
+}
+
+@font-face {
+  font-family: "Figtree";
+  src: url(./assets/fonts/Figtree-VariableFont_wght.ttf) format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Figtree-Italic";
+  src: url(./assets/fonts/Figtree-Italic-VariableFont_wght.ttf)
+    format("truetype");
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Figtree-ExtraBold";
+  src: url(./assets/fonts/static/Figtree-ExtraBold.ttf) format("truetype");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Figtree-SemiBold";
+  src: url(./assets/fonts/static/Figtree-SemiBold.ttf) format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+.large-text {
+  font-family: "Figtree-ExtraBold";
+  font-size: var(--font-size-l);
+}
+
+.medium-text {
+  font-family: "Figtree";
+  font-size: var(--font-size-m);
+}
+
+.small-text {
+  font-family: "Figtree";
+  font-size: var(--font-size-sm);
+}
+
+.small-text-bold {
+  font-family: "Figtree-ExtraBold";
+  font-size: var(--font-size-sm);
+}
+
+html {
+  font-size: 62.5%; /* 1rem = 10px */
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  grid-template-rows: 1fr max-content;
+  justify-items: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: var(--yellow);
+
+  font-family: "Figtree";
+  font-size: var(--font-size-m);
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+.card {
+  width: min(384px, 87.2vw);
+  padding: var(--spacing300);
+  border-radius: 20px;
+  background-color: var(--white);
+  border: 1px solid var(--dark);
+  box-shadow: 8px 8px 0 0 black;
+}
+
+.main-img {
+  border-radius: 10px;
+  margin-bottom: var(--spacing300);
+}
+
+.pill {
+  display: inline-block;
+  padding: var(--spacing50) var(--spacing150);
+  background-color: var(--yellow);
+  border-radius: 4px;
+  margin-bottom: var(--spacing150);
+}
+
+.date {
+  margin-bottom: var(--spacing150);
+}
+
+.card .large-text {
+  margin-bottom: var(--spacing150);
+}
+
+.card .large-text a,
+.card .large-text a:visited {
+  color: var(--dark);
+  text-decoration: none;
+  transition: color 200ms linear;
+}
+
+.card .large-text a:hover {
+  color: var(--yellow);
+}
+
+.main-text {
+  color: var(--gray);
+  margin-bottom: var(--spacing300);
+}
+
+.portfolio {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing150);
+}
+
+.portfolio img {
+  width: 32px;
+}
