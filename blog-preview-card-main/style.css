@@ -5,9 +5,9 @@
   --white: hsl(0, 0%, 100%);
 
   /* Font Sizes */
-  --font-size-l: 2.4rem;
-  --font-size-m: 1.6rem;
-  --font-size-sm: 1.4rem;
+  --font-size-l: 24px;
+  --font-size-m: 16px;
+  --font-size-sm: 14px;
 
   /* Spacing */
   --spacing300: 2.4rem;
@@ -52,22 +52,22 @@
 
 .large-text {
   font-family: "Figtree-ExtraBold";
-  font-size: var(--font-size-l);
+  font-size: clamp(20px, calc(2.3vw + 1rem), var(--font-size-l));
 }
 
 .medium-text {
   font-family: "Figtree";
-  font-size: var(--font-size-m);
+  font-size: clamp(var(--font-size-sm), calc(1vw + 1rem), var(--font-size-m));
 }
 
 .small-text {
   font-family: "Figtree";
-  font-size: var(--font-size-sm);
+  font-size: clamp(12px, calc(0.7vw + 1rem), var(--font-size-sm));
 }
 
 .small-text-bold {
   font-family: "Figtree-ExtraBold";
-  font-size: var(--font-size-sm);
+  font-size: clamp(12px, calc(0.7vw + 1rem), var(--font-size-sm));
 }
 
 html {
@@ -86,10 +86,11 @@ body {
   justify-items: center;
   align-items: center;
   min-height: 100vh;
+  line-height: 1.5;
   background-color: var(--yellow);
 
   font-family: "Figtree";
-  font-size: var(--font-size-m);
+  font-size: clamp(14px, calc(1vw + 1rem), 16px);
 }
 
 img {
