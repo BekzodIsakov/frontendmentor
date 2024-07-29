@@ -91,6 +91,8 @@ body {
 
   font-family: "Figtree";
   font-size: clamp(14px, calc(1vw + 1rem), 16px);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 img {
