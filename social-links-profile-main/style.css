@@ -1,0 +1,158 @@
+@font-face {
+  font-family: "Inter";
+  src: url(./assets//fonts/static/Inter-Regular.ttf) format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter-SemiBold";
+  src: url(./assets//fonts/static/Inter-SemiBold.ttf) format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter-Bold";
+  src: url(./assets//fonts/static/Inter-Bold.ttf) format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  /* colors */
+  --grey900: hsl(0, 0%, 8%);
+  --grey800: hsl(0, 0%, 12%);
+  --grey700: hsl(0, 0%, 20%);
+  --green: hsl(75, 94%, 57%);
+  --white: hsl(0, 0%, 100%);
+
+  /* spacing */
+  --spacing500: "40px";
+  --spacing300: "24px";
+  --spacing200: "16px";
+  --spacing150: "12px";
+  --spacing100: "8px";
+  --spacing50: "4px";
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%; /* 1rem = 10px */
+}
+
+body {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  grid-template-rows: 1fr max-content;
+
+  min-height: 100vh;
+  padding-inline: 2rem;
+  background: var(--grey900);
+  color: var(--white);
+
+  font-family: "Inter";
+  font-size: 1.4rem;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+ul {
+  list-style-type: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+.font-large {
+  font-family: "Inter-SemiBold";
+  font-size: 2.4rem;
+}
+
+.font-medium {
+  font-family: "Inter";
+  font-size: 1.4rem;
+}
+
+.font-medium-bold {
+  font-family: "Inter-Bold";
+  font-size: 1.4rem;
+}
+
+.profile {
+  background-color: var(--grey800);
+  border-radius: 12px;
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  text-align: center;
+}
+
+.profile__img {
+  width: 88px;
+  border-radius: 50%;
+  margin: auto;
+}
+
+.profile__info h1 {
+  margin-bottom: 0.4rem;
+}
+
+.profile__info p {
+  color: var(--green);
+}
+
+.social-links li:not(:last-child) {
+  margin-bottom: 1.6rem;
+}
+
+.social-links a {
+  display: block;
+  border-radius: 8px;
+  background: var(--grey700);
+  padding: 1.2rem;
+  color: inherit;
+  text-decoration: none;
+  font-family: "Inter-Bold";
+  transition: color 200ms, background-color 200ms;
+}
+
+.social-links a:hover {
+  background: var(--green);
+  color: var(--grey700);
+}
+
+
+/* mobile */
+@media screen and (width <= 600px) {
+  .profile {
+    max-width: 327px;
+  }
+}
+
+/* tablet */
+@media screen and (width >= 600px) {
+  .profile {
+    width: 456px;
+  }
+}
+
+/* desktop */
+@media screen and (width >= 992px) {
+  .profile {
+    width: 384px;
+  }
+}
