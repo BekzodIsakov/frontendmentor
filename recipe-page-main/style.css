@@ -93,6 +93,16 @@ main {
   display: grid;
 }
 
+h1 {
+  margin-bottom: var(--spacing300);
+  color: var(--stone900);
+}
+
+h2 {
+  color: var(--brown800);
+  margin-bottom: var(--spacing300);
+}
+
 img {
   display: block;
   width: 100%;
@@ -101,7 +111,6 @@ img {
 ul,
 ol {
   list-style-type: none;
-  /* list-style-position: inside; */
   padding-left: var(--spacing100);
 }
 
@@ -110,7 +119,6 @@ li:not(:last-child) {
 }
 
 ol li {
-  margin-bottom: var(--spacing100);
   display: flex;
   gap: var(--spacing200);
 }
@@ -127,16 +135,6 @@ ul li::before {
   display: inline-block;
   color: var(--rose800);
   margin-right: 2.8rem;
-}
-
-h1 {
-  margin-bottom: var(--spacing300);
-  color: var(--stone900);
-}
-
-h2 {
-  color: var(--brown800);
-  margin-bottom: var(--spacing300);
 }
 
 hr {
