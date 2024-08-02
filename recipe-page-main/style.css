@@ -105,6 +105,10 @@ ol {
   padding-left: var(--spacing100);
 }
 
+li {
+  margin-bottom: var(--spacing100);
+}
+
 ol li {
   margin-bottom: var(--spacing100);
   display: flex;
@@ -127,6 +131,7 @@ ul li::before {
 
 h1 {
   margin-bottom: var(--spacing300);
+  color: var(--stone900);
 }
 
 h2 {
