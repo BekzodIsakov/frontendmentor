@@ -105,7 +105,7 @@ ol {
   padding-left: var(--spacing100);
 }
 
-li {
+li:not(:last-child) {
   margin-bottom: var(--spacing100);
 }
 
