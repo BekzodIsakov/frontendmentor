@@ -85,12 +85,13 @@ body {
   grid-template-rows: 1fr max-content;
   justify-items: center;
   align-items: center;
+  
   min-height: 100vh;
-  line-height: 1.5;
   background-color: var(--yellow);
-
+  
   font-family: "Figtree";
   font-size: clamp(14px, calc(1vw + 1rem), 16px);
+  line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
