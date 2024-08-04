@@ -27,8 +27,18 @@
     object-fit: cover;
   }
 
-  &__image-wrapper {
+  &__img-wrapper {
     object-fit: cover;
+    position: relative;
+
+    .overlay {
+      position: absolute;
+      backdrop-filter: brightness(90%);
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+    }
   }
 
   &__content-wrapper {
