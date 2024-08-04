@@ -1,0 +1,100 @@
+@use "variables";
+@use "base";
+
+.text-lg {
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+  font-size: 3.2rem;
+  line-height: 1;
+}
+
+.card {
+  background-color: white;
+  width: min(600px, 91vw);
+  border-radius: 8px;
+  overflow: hidden;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  @media screen and (max-width: 600px) {
+    grid-template-columns: 1fr;
+    margin-block: 2.8rem;
+  }
+
+  img {
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__image-wrapper {
+    object-fit: cover;
+  }
+
+  &__content-wrapper {
+    padding: 3.2rem;
+
+    @media screen and (max-width: 600px) {
+      padding: 2.4rem;
+    }
+  }
+
+  &__title {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.41em;
+    margin-bottom: 2rem;
+  }
+
+  &__main-title {
+    @extend .text-lg;
+    color: variables.$darkBlue;
+    margin-bottom: 2.4rem;
+  }
+
+  &__main-text {
+    margin-bottom: 2.9rem;
+  }
+
+  &__price {
+    display: flex;
+    align-items: center;
+    gap: 1.9rem;
+    margin-bottom: 3rem;
+
+    &--current {
+      @extend .text-lg;
+      color: variables.$darkCyan;
+    }
+
+    &--previous {
+      font-size: 1.3rem;
+      line-height: 1.77;
+    }
+  }
+
+  &__button {
+    background: variables.$darkCyan;
+    border: none;
+    border-radius: 8px;
+    width: 100%;
+    padding: 1.5rem;
+    color: white;
+    font-size: inherit;
+    font-family: inherit;
+    font-weight: 700;
+    display: flex;
+    gap: 1.15rem;
+    justify-content: center;
+    transition: background 200ms linear;
+
+    &:hover {
+      background: variables.$deepAquaMarine;
+      cursor: pointer;
+    }
+  }
+
+  &__icon {
+    width: 14px;
+  }
+}
