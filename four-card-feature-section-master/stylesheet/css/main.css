@@ -113,7 +113,7 @@ ul {
 .card {
   border-radius: 8px;
   box-shadow: 0 15px 30px -11px rgba(131, 166, 210, 0.5);
-  padding: 2.8rem;
+  padding: 2.4rem 2.8rem 2.8rem;
 }
 .card__content {
   margin-bottom: 3.3rem;
@@ -147,7 +147,7 @@ ul {
     gap: 3rem;
   }
   .card {
-    padding: 3.2rem;
+    padding: 2.8rem 3.2rem 3.2rem;
   }
   .card__content {
     margin-bottom: 4rem;
