@@ -117,6 +117,7 @@ ul {
 }
 .card__content {
   margin-bottom: 3.3rem;
+  font-size: 1.3rem;
 }
 .card__img {
   display: block;
