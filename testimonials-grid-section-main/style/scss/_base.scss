@@ -1,0 +1,48 @@
+$purple700: hsl(263, 55%, 52%);
+$purple500: hsl(264, 82%, 70%);
+$gray600: hsl(217, 19%, 35%);
+$zinc800: hsl(219, 29%, 14%);
+$neutral300: hsl(0, 0%, 81%);
+$sky50: hsl(210, 46%, 95%);
+
+.text-medium {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.text-semibold {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  min-height: 100vh;
+  background: $sky50;
+
+  display: grid;
+  grid-template-rows: 1fr max-content;
+
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-size: 1.3rem;
+  line-height: 1.8rem;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+main {
+  display: grid;
+  place-items: center;
+  padding: 7.1rem 2.4rem;
+}
