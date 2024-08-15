@@ -45,7 +45,7 @@ main {
   column-gap: 3rem;
   row-gap: 2.4rem;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 49.3% 46.5%;
   grid-template-areas: "card-one card-one card-two card-five" "card-three card-four card-four card-five";
 }
 
